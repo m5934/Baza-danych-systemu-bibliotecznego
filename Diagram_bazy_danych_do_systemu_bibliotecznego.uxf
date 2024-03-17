@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>270</y><w>210</w><h>120</h></coordinates><panel_attributes>object: Admin
+--
+imie: string
+nazwisko: string
+e-mail: string
+telefon: number
+haslo: string
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>210</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Autorzy
+--
+id: int
+imie: string
+nazwisko: string
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Książki
+--
+id: int
+tytuł: string
+autor_id: int
+wydawnictwo: string
+rok_wyd: double
+
+
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>340</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Egzemplarz
+--
+id: int
+id_ksiązki: int
+status: string
+id_czytelnik: int
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>30</y><w>210</w><h>170</h></coordinates><panel_attributes>object:Czytelnik
+--
+id: int
+imie: string
+nazwisko: string
+e-mail: string
+telefon: number
+miasto: string
+kod_pocztowy: string
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element></diagram>
