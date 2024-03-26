@@ -1,16 +1,17 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>270</y><w>210</w><h>120</h></coordinates><panel_attributes>object: Admin
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>130</x><y>360</y><w>210</w><h>120</h></coordinates><panel_attributes>object: Pracownicy
 --
 imie: string
 nazwisko: string
+stanowsiko: string
 e-mail: string
 telefon: number
 haslo: string
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>210</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Autorzy
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>240</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Autorzy
 --
 id: int
 imie: string
 nazwisko: string
-[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>70</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Książki
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>470</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Książki
 --
 id: int
 tytuł: string
@@ -19,13 +20,13 @@ wydawnictwo: string
 rok_wyd: double
 
 
-[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>340</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Egzemplarz
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>370</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Egzemplarze
 --
 id: int
 id_ksiązki: int
 status: string
 id_czytelnik: int
-[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>30</y><w>210</w><h>170</h></coordinates><panel_attributes>object:Czytelnik
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>40</y><w>210</w><h>170</h></coordinates><panel_attributes>object:Czytelnicy
 --
 id: int
 imie: string
@@ -33,5 +34,20 @@ nazwisko: string
 e-mail: string
 telefon: number
 miasto: string
-kod_pocztowy: string
-[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+kod_pocztowy: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>140</y><w>100</w><h>30</h></coordinates><panel_attributes>SimpleClass</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>230</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Wypożyczenia
+--
+id_egzemplarza: int
+id_czytelnika: int
+termin: data
+prolongaty: double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>30</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Rezerwacje
+--
+id: int
+id_czytelnika: int
+id_egzemplarza: int
+termin: data
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>140</y><w>210</w><h>70</h></coordinates><panel_attributes>object: Zamówienia
+--
+id: int
+id_czytelnik: int
+id_egzemplarz: int
+data: data</panel_attributes><additional_attributes></additional_attributes></element></diagram>
