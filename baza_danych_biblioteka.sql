@@ -14,3 +14,9 @@ CREATE DATABASE "Biblioteka"
 
 COMMENT ON DATABASE "Biblioteka"
     IS 'Baza danych do systemu bibliotecznego';
+	
+CREATE TABLE IF NOT EXISTS Książki
+	(ID SERIAL PRIMARY KEY,
+	ID_CZYTELNIKA INT,
+	STATUS TEXT);
+	
