@@ -20,6 +20,13 @@ CREATE TABLE IF NOT EXISTS ksiazki(
 	tytuł TEXT,
 	autor_id TEXT
 );
+
+CREATE TABLE IF NOT EXISTS egzemplarze(
+	id  serial PRIMARY KEY,
+	id_ksiazki int NOT NULL REFERENCES ksiazki (id),
+	status text DEFAULT 'Dostępny' NOT NULL,
+	FOREIGN KEY (id_ksiazki) REFERENCES ksiazki (id) ON DELETE CASCADE
+);
 	
 	
 	
