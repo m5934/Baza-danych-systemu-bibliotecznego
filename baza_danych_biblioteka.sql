@@ -49,4 +49,10 @@ CREATE TABLE IF NOT EXISTS zamowienia(
 	id_czytelnika int NOT NULL,
 	id_egzemplarza text NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS rezerwacje(
+	id serial NOT NULL PRIMARY KEY,
+	id_czytelnika int NOT NULL,
+	id_egzemplarza text NOT NULL
+);
 	
