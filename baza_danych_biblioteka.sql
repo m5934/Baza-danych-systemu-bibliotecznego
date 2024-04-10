@@ -56,3 +56,11 @@ CREATE TABLE IF NOT EXISTS rezerwacje(
 	id_egzemplarza text NOT NULL
 );
 	
+CREATE TABLE IF NOT EXISTS wypozyczenia(
+	id serial NOT NULL,
+	id_czytelnika int NOT NULL,
+	id_egzemplarza text NOT NULL,
+	termin date NOT NULL,
+	prologaty int NOT NULL
+	CONSTRAINT liczba_prologat CHECK (prologaty BETWEEN 0 AND 3)
+);
