@@ -43,5 +43,10 @@ CREATE TABLE IF NOT EXISTS autorzy(
 	imie text NOT NULL,
 	nazwisko text NOT NULL
 );
-	
+
+CREATE TABLE IF NOT EXISTS zamowienia(
+	id serial NOT NULL PRIMARY KEY,
+	id_czytelnika int NOT NULL,
+	nazwisko text NOT NULL
+);
 	
