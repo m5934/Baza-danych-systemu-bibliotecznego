@@ -27,6 +27,15 @@ CREATE TABLE IF NOT EXISTS egzemplarze(
 	status text DEFAULT 'Dostępny' NOT NULL,
 	FOREIGN KEY (id_ksiazki) REFERENCES ksiazki (id) ON DELETE CASCADE
 );
-	
+
+CREATE TABLE IF NOT EXISTS czytelnicy(
+	id int NOT NULL PRIMARY KEY,
+	imie text NOT NULL,
+	nazwisko text NOT NULL,
+	email text,
+	telefon int,
+	miasto text NOT NULL,
+	kod_pocztowy text NOT NULL
+);
 	
 	
