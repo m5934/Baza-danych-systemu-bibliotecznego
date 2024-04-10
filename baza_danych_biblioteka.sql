@@ -37,5 +37,11 @@ CREATE TABLE IF NOT EXISTS czytelnicy(
 	miasto text NOT NULL,
 	kod_pocztowy text NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS autorzy(
+	id int NOT NULL PRIMARY KEY,
+	imie text NOT NULL,
+	nazwisko text NOT NULL
+);
 	
 	
