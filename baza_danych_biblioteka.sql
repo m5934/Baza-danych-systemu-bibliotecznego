@@ -70,6 +70,6 @@ CREATE TABLE IF NOT EXISTS pracownicy(
 	id_czytelnika int NOT NULL,
 	id_egzemplarza text NOT NULL,
 	termin date NOT NULL,
-	prologaty int NOT NULL
-	CONSTRAINT liczba_prologat CHECK (prologaty BETWEEN 0 AND 3)
+	prologaty int NOT NULL -- liczba prologat
+	CONSTRAINT liczba_prologat CHECK (prologaty BETWEEN 0 AND 3) 
 );
