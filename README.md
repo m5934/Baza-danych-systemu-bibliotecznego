@@ -1,5 +1,6 @@
 # Baza danych systemu bibliotecznego
- Baza danych do planowanego systemu bibliotecznego.
+ Baza danych do planowanego systemu bibliotecznego
+ tworzeonego w celu ćwiczenia tworzenia baz danych.
  
  Baza danych będzie przechowywała dane czytelników,
  pracowników biblioteki i książek.
@@ -26,3 +27,5 @@ Dane książek przechowywane w bazie:
 - autor;
 - tematy;
 - słowa kluczowe.
+
+Obecnie trwają wstępne prace nad relacjami między tabelami.
