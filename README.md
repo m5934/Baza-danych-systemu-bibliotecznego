@@ -28,4 +28,4 @@ Dane książek przechowywane w bazie:
 - tematy;
 - słowa kluczowe.
 
-Obecnie trwają wstępne prace nad relacjami między tabelami.
+Obecnie trwa analiza relacji między tabelami.
