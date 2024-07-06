@@ -1,6 +1,6 @@
 # Baza danych systemu bibliotecznego
- Baza danych do planowanego systemu bibliotecznego
- tworzeonego w celu ćwiczenia tworzenia baz danych.
+ Baza danych do systemu bibliotecznego, który jest w trakcie planowania.
+ System jest tworzony w ramach ćwiczeń własnych.
  
  Baza danych będzie przechowywała dane czytelników,
  pracowników biblioteki i książek.
